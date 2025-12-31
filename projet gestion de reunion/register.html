@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription - MeetingPlanner</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-title">Inscription</div>
+        <form class="login-form" id="registerForm" method="POST" action="register.php">
+            <div class="input-group"><span class="input-emoji">👤</span><input type="text" name="fullname" id="fullname" placeholder="Nom complet" required></div>
+            <div class="input-group"><span class="input-emoji">📧</span><input type="email" name="adresse" id="reg-email" placeholder="Adresse e-mail" required></div>
+            <div class="input-group"><span class="input-emoji">🔒</span><input type="password" name="password" id="reg-password" placeholder="Mot de passe" required></div>
+            <div class="input-group"><span class="input-emoji">🔒</span><input type="password" name="confirm" id="reg-confirm" placeholder="Confirmer le mot de passe" required></div>
+            <button type="submit">S'inscrire</button>
+            <div id="register-error" style="color: #d32f2f; margin-top: 10px; display: none;"></div>
+        </form>
+    </div>
+    <script src="js/register.js"></script>
+    <script>
+document.querySelectorAll('.toggle-password').forEach(function(eye) {
+    eye.addEventListener('click', function() {
+        var target = document.getElementById(this.getAttribute('data-target'));
+        if (target.type === 'password') {
+            target.type = 'text';
+            this.textContent = '🙈';
+        } else {
+            target.type = 'password';
+            this.textContent = '👁️';
+        }
+    });
+});
+</script>
+</body>
+</html> 

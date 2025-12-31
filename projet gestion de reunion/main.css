@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    height: 120px;
+}
+.logo-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+}
+.actions {
+    display: flex;
+    gap: 15px;
+}
+.actions a {
+    text-decoration: none;
+    color: #fff;
+    background: #2563eb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.actions a:hover {
+    background: #1e40af;
+}
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.cta-buttons {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn-primary {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.07);
+}
+.btn-primary:hover {
+    background: #1e40af;
+    transform: translateY(-2px);
+}
+.btn-secondary {
+    background: #fff;
+    color: #000;
+    border: 2px solid #bbb;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    text-decoration: none !important;
+}
+.btn-secondary:hover {
+    background: #f7f7f7;
+    color: #000;
+    border-color: #888;
+    text-decoration: none !important;
+}
+.arrow {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.main-content h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.welcome-text {
+    color: #000;
+}
+.app-name {
+    color: #10b981;
+}
+.definition {
+    max-width: 600px;
+    line-height: 1.6;
+    color: #666;
+    font-size: 1.1em;
+}
+.why-section {
+    margin-top: 130px;
+    text-align: center;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
+    justify-items: center;
+    align-items: start;
+    max-width: 900px;
+    margin: 60px auto 0 auto;
+}
+.feature-block {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+.feature-icon {
+    background: #eaf1fb;
+    color: #000000;
+    font-size: 2.5em;
+    border-radius: 16px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+.feature-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+}
+.feature-desc {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.4;
+}
+.stats-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    color: #fff;
+    padding: 18px 0;
+    margin: 40px auto 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(24,119,232,0.08);
+    gap: 40px;
+    max-width: 800px;
+}
+.stat-block {
+    flex: 1;
+    text-align: center;
+    min-width: 180px;
+}
+.stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.stat-label {
+    font-size: 1em;
+    opacity: 0.93;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.avis-intro {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 18px;
+    margin-top: 50px;
+    letter-spacing: 0.5px;
+}
+.avis-section {
+    margin: 60px auto 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+.avis-titre {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+}
+.avis-soustitre {
+    color: #666;
+    font-size: 1.15em;
+    margin-bottom: 38px;
+}
+.avis-grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto 60px auto;
+    max-width: 900px;
+}
+.avis-block {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(24,119,232,0.10);
+    padding: 28px 32px 22px 32px;
+    max-width: 350px;
+    min-width: 260px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s;
+    border: 1px solid #f0f0f0;
+}
+.avis-block:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(24,119,232,0.16);
+}
+.avis-stars {
+    color: #60a5fa;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+.avis-text {
+    color: #222;
+    font-size: 1.08em;
+    margin-bottom: 18px;
+    font-style: italic;
+    line-height: 1.5;
+}
+.avis-user {
+    margin-top: auto;
+}
+.avis-nom {
+    color: #222;
+    font-weight: bold;
+    font-size: 1em;
+}
+.avis-fonction {
+    color: #888;
+    font-size: 0.98em;
+}
+.cta-titre {
+    display: block;
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #222;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cta-soustitre {
+    display: block;
+    font-size: 1.2em;
+    color: #757575;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+.cta-accroche {
+    text-align: center;
+    margin: 60px 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+}
+@media (max-width: 800px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .stats-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 0;
+    }
+    .stat-block {
+        min-width: unset;
+    }
+}
+@media (max-width: 900px) {
+    .avis-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .avis-block {
+        width: 90%;
+        max-width: 400px;
+    }
+} 

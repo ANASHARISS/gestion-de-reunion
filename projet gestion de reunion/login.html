@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion - MeetingPlanner</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-title">Connexion</div>
+        <form class="login-form" id="loginForm" method="POST" action="login.php">
+            <div class="input-group"><span class="input-emoji">📧</span><input type="email" name="adresse" id="login-email" placeholder="Adresse e-mail" required></div>
+            <div class="input-group"><span class="input-emoji">🔒</span><input type="password" name="password" id="login-password" placeholder="Mot de passe" required></div>
+            <button type="submit">Se connecter</button>
+            <div id="login-error" style="color: #d32f2f; margin-top: 10px; display: none;"></div>
+        </form>
+        <script>
+        // Affiche l'erreur passée en paramètre GET ?error=...
+        const params = new URLSearchParams(window.location.search);
+        if(params.has('error')) {
+            const err = decodeURIComponent(params.get('error'));
+            const div = document.getElementById('login-error');
+            div.textContent = err;
+            div.style.display = 'block';
+        }
+        </script>
+        <div style="margin-top: 20px; text-align: center;">
+            <a href="register.html" style="
+                display: inline-block;
+                padding: 10px 20px;
+                background: linear-gradient(135deg, #2563eb 0%, #10b981 100%);
+                color: white;
+                text-decoration: none;
+                border-radius: 25px;
+                font-weight: 500;
+                box-shadow: 0 4px 15px rgba(37,99,235,0.15);
+                transition: all 0.3s ease;
+                border: none;
+                cursor: pointer;
+            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(16,185,129,0.18)'" 
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(37,99,235,0.15)'">
+                S'inscrire
+            </a>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html> 
