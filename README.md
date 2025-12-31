@@ -1,40 +1,30 @@
-Gestion de Réunion
-Description
+# Gestion de Réunion
 
-Le projet Gestion de Réunion est une application web conçue pour faciliter l’organisation, la planification et le suivi des réunions. Il permet de gérer les réunions, les participants et les informations associées de manière structurée et centralisée.
+## Présentation du projet
+Le projet **Gestion de Réunion** est une application web conçue pour faciliter l’organisation, la planification et le suivi des réunions. Elle permet de centraliser les informations liées aux réunions et d’optimiser le suivi des participants ainsi que des décisions prises.
 
-Prérequis
+## Prérequis
+- XAMPP
+- Un navigateur web moderne
 
-Avant d’exécuter ce projet, vous devez installer :
+## Installation et exécution
 
-XAMPP (Apache et MySQL)
+### Étape 1 : Installation de XAMPP
+Télécharger et installer **XAMPP** sur votre machine. Une fois l’installation terminée, ouvrir le panneau de contrôle XAMPP et démarrer les services **Apache** et **MySQL**.
 
-Un navigateur web moderne
+### Étape 2 : Déploiement du projet
+Copier le dossier du projet **Gestion de Réunion** dans le répertoire `htdocs`, situé dans le dossier d’installation de XAMPP.
 
-Installation et exécution
+### Étape 3 : Accès à l’application
+Ouvrir un navigateur web et saisir l’URL suivante :
+http://localhost/gestion%20de%20reunion
+L’application sera alors accessible et prête à être utilisée.
 
-Installer et lancer XAMPP
+## Technologies utilisées
+- PHP
+- MySQL
+- HTML / CSS
+- JavaScript
 
-Démarrer les services Apache et MySQL
-
-Copier le dossier du projet dans le répertoire htdocs de XAMPP
-
-Importer la base de données (si disponible) via phpMyAdmin
-
-Ouvrir un navigateur et accéder à :
-
-http://localhost/projet%20gestion%20de%20reunion
-
-Technologies utilisées
-
-PHP
-
-MySQL
-
-HTML / CSS
-
-JavaScript
-
-Objectif
-
-Ce projet vise à améliorer la gestion des réunions et à offrir une solution simple et efficace pour les organisations ou les équipes.
+## Objectif
+Ce projet a pour objectif de proposer une solution web simple, efficace et accessible pour la gestion des réunions au sein d’une organisation.
