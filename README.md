@@ -23,7 +23,7 @@ Importer la base de données (si disponible) via phpMyAdmin
 
 Ouvrir un navigateur et accéder à :
 
-http://localhost/projet de gestion reunion
+http://localhost/projet%20de%20gestion%20reunion
 
 Technologies utilisées
 
